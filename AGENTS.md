@@ -2,12 +2,11 @@
 
 ## Structure and conventions
 
-- Keep reusable logic in `python_template/` and command-line handling in `cli.py`.
+- Keep reusable logic in `pdb_downloader/` and command-line handling in `cli.py`.
 - Configure `molecular_utilities.logging` once at the entry point; use child
   loggers under the project namespace in other modules. Do not configure
   logging as an import side effect.
-- When adapting the template, rename package, CLI, logging namespace, tests and
-  documentation together. See the [README](README.md).
+- Keep CLI, logging namespace, tests and documentation consistent.
 
 ## Changes and validation
 

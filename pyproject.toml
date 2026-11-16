@@ -3,18 +3,21 @@ requires = ["setuptools>=61"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "python-project-template"
+name = "pdb-downloader"
 version = "0.1.0"
-description = "A reusable Python project starter"
+description = "Search and download RCSB PDB structures and extract bound ligands"
 readme = "README.md"
 requires-python = ">=3.10"
 license = {file = "LICENSE"}
 dependencies = [
     "molecular-utilities @ git+https://github.com/eisenmann-bastian/molecular-utilities.git",
+    "requests>=2.31",
+    "gemmi>=0.6.7",
+    "rdkit>=2023.9",
 ]
 
 [project.scripts]
-python-template = "python_template.cli:main"
+pdb-downloader = "pdb_downloader.cli:main"
 
 [tool.setuptools.packages.find]
-include = ["python_template*"]
+include = ["pdb_downloader*"]

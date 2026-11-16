@@ -1,4 +1,4 @@
-"""Run the starter command as a module."""
+"""Run the command-line interface."""
 
 from .cli import main
 

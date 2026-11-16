@@ -15,4 +15,4 @@ if [ ! -f "$venv/bin/activate" ] || [ ! -x "$venv/bin/python" ]; then
     exit 1
 fi
 . "$venv/bin/activate"
-"$venv/bin/python" -m python_template --name "example"
+"$venv/bin/python" -m pdb_downloader search --protein hemoglobin --max-results 5
